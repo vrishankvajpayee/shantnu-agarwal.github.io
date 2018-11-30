@@ -8,3 +8,10 @@ body{
 	text-align:center;
 	margin-top: 90px;
 }
+#FORM1 {
+	font-size:20px;
+}
+
+.parallax-container {
+	height: 500px;
+}
