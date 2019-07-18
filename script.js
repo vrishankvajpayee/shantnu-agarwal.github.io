@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-	var elems = document.querySelectorAll('.parallax');
-	var instances = M.Parallax.init(elems, 0);
-});
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})

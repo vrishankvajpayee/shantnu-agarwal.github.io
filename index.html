@@ -11,8 +11,7 @@
 	</script>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
 
@@ -28,171 +27,204 @@
 
 <body>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-
-	<div class="parallax-container" >
-		<div class="parallax"><img src="images/parallax2.jpg"></div>
-		<div class="container">
-			<h1 id="Headline">Greetings!</h1>
-		</div>
-	</div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#navbarSupportedContent">Back to top <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#FORM1">Skills <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+	<br>lol <br>
+<div class="jumbotron">
+  <h1 class="display-4">Greetings!</h1>
+  <p class="lead">Shantnu Agarwal</p>
+  <hr class="my-4">
+  <p>I am a 2nd year Computer Science under-grad student at SRM Institute of Science and Technology, Chennai expecting to graduate in the year 2021. Down below is an open book to my professional life. If you find something, reach out to me.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+		
 
 	<!------------------- Headline ends here ----------->
 
-	<div class="section white">
-		<div class="row container">
-			<h2 class="header">Shantnu Agarwal</h2>
-			<p class="grey-text text-darken-3 lighten-3">I am a 2nd year Computer Science under-grad student at SRM Institute of Science and Technology, Chennai expecting to graduate in the year 2021. Down below is an open book to my professional life. If you find something, reach out to me.</p>
-		</div>
-	</div>
+	
+	
 
-	<div class="parallax-container">
-		<div class="parallax"><img src="images/chess.jpg"></div>
-	</div>
+		
+	
 
 	<div class="section white">
-		<div class="row container">
-			<h2 class="header">Skill Set</h2>
-			<form action="#" id="FORM1">
-				<p>
-					<label>
-						<input type="checkbox" checked="checked" disabled="disabled" />
-						<span>C, C++, Java</span>
-					</label>
-				</p>
-
-				<p>
-					<label>
-						<input type="checkbox" checked="checked" disabled="disabled" />
-						<span>HTML, CSS, JS, Bootstrap, Materialize</span>
-					</label>
-				</p>
-				<p>
-					<label>
-						<input type="checkbox" checked="checked" disabled="disabled" />
-						<span>Spring Security, Spring MVC, Web Servlets with Java and XML</span>
-					</label>
-				</p>
-				<p>
-					<label>
-						<input type="checkbox" checked="checked" disabled="disabled" />
-						<span>Python - Algorithms and Data Structures.</span>
-					</label>
-				</p>
-				<p>
-					<label>
-						<input type="checkbox" checked="checked" disabled="disabled" />
-						<span>Android App/Dev on Android Studio</span>
-					</label>
-				</p>
-				<p>
-					<label>
-						<input type="checkbox" checked="checked" disabled="disabled" />
-						<span>Web-Apps with Electron and NodeJS, AJAX, JSP</span>
-					</label>
-				</p>
-				<p>
-					<label>
-						<input type="checkbox" checked="checked" disabled="disabled" />
-						<span>MySQL, Firebase</span>
-					</label>
-				</p>
-				<p>
-					<label>
-						<input type="checkbox" disabled="disabled" />
-						<span>Ongoing: Advanced Application Development with Android Studio</span>
-					</label>
-				</p>
-				<p>
-					<label>
-						<input type="checkbox" disabled="disabled" />
-						<span>Extras: CAD, Matlab, Version Control with Git</span>
-					</label>
-				</p>
-			</form>
+	<div class="container">
+		<div class="card" style="width: 50%;">
+  			<img src="..." class="card-img-top" alt="Image Here">
+  			<div class="card-body">
+    			<h3 class="card-title">Skill Set</h3>
+  			</div>
+  			<ul class="list-group list-group-flush">
+    			<li class="list-group-item">C, C++, Java</li>
+    			<li class="list-group-item">HTML, CSS, JS, Bootstrap, Materialize</li>
+    			<li class="list-group-item">Spring Security, Spring MVC, Web Servlets with Java and XML</li>
+				<li class="list-group-item">Python - Algorithms and Data Structures.</li>
+				<li class="list-group-item">Android App/Dev on Android Studio</li>
+				<li class="list-group-item">Web-Apps with Electron and NodeJS, AJAX, JSP</li>
+				<li class="list-group-item">MySQL, Firebase</li>
+				<li class="list-group-item">Ongoing: Advanced Application Development with Android Studio</li>
+				<li class="list-group-item">Extras: CAD, Matlab, Version Control with Git</li>
+  			</ul>
 		</div>
+	</div>
 	</div>
 
 	<!------------ WORK EXPERIENCE STARTS HERE----------->
-	<div class="parallax-container">
-		<div class="parallax"><img src="images/work2.jpg"></div>
-	</div>
 
-	<div class="section white">
-		<div class="row container">
+	
+		<div class="container">
 			<h2 class="header">Work Experience</h2>
 			
-			<ol>
-				
-				<h5> <li> <a href="http://msclubsrm.com" style="color:black">Microsoft Club, SRM</a></li></h5>
-				<p style="margin-top:0px">
-					Web and App  Member <br />4<sup>th</sup> Semester - <i>Currently working here.</i>
-				</p>
-				
-				<h5> <li> <a href="https://www.infosys.com/" style="color:black">Infosys Limited</a></li></h5>
-				<p style="margin-top:0px">
-					Application Development Intern (Java EE) <br />2<sup>nd</sup> Year Four-Week Internship
-				</p>
+			<p>
+  				<a class="btn btn-primary" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
+    				Microsoft Club, SRM
+  				</a>
+			</p>
+			<div class="collapse" id="collapse1">
+  				<div class="card card-body">
+    			Web and App  Member <br />4<sup>th</sup> Semester - <i>Currently working here.</i>
+  				</div>
+			</div>
 
-				<h5> <li> <a href="http://srmrudra.com/" style="color:black">Team Rudra</a></li></h5>
-				<p style="margin-top:0px">
-					Coder. <br />3<sup>rd</sup> Semester
-				</p>
 
-				<h5><li><a href="https://srmkzilla.net/" style="color:black">SRMKZILLA, Mozilla Campus Club</a></li></h5>
-				<p style="margin-top:0px">
-					Public Relations. <br />
+			<p>
+  				<a class="btn btn-primary" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
+    				Infosys Ltd.
+  				</a>
+			</p>
+			<div class="collapse" id="collapse2">
+  				<div class="card card-body">
+    			Application Development Intern (Java EE) <br />2<sup>nd</sup> Year Four-Week Internship
+  				</div>
+			</div>
+
+
+			<p>
+  				<a class="btn btn-primary" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapseExample">
+    				Team Rudra
+  				</a>
+			</p>
+			<div class="collapse" id="collapse3">
+  				<div class="card card-body">
+	    			Coder. <br>3<sup>rd</sup> Semester
+  				</div>
+			</div>
+
+
+			<p>
+  				<a class="btn btn-primary" data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapseExample">
+    				SRMKZILLA, Mozilla Campus Club
+  				</a>
+			</p>
+			<div class="collapse" id="collapse4">
+  				<div class="card card-body">
+	    			Public Relations. <br>
+					1 <sup>st</sup> - 2 <sup>nd</sup> Semester
+  				</div>
+			</div>
+
+			<p>
+  				<a class="btn btn-primary" data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapseExample">
+    				AARUUSH - National Techno-Management Fest of SRM
+  				</a>
+			</p>
+			<div class="collapse" id="collapse5">
+  				<div class="card card-body">
+	    			Public Relations. <br />
 					1<sup>st</sup> - 2<sup>nd</sup> Semester
-				</p>
+  				</div>
+			</div>
 
-				<h5><li><a href="https://www.aaruush.net/" style="color:black">AARUUSH - National Techno-Management Fest of SRM</a></li></h5>
-				<p style="margin-top:0px">
-					Public Relations. <br />
-					1<sup>st</sup> - 2<sup>nd</sup> Semester
-				</p>
-				
-				<h5><li><a href="http://esindia.in/" style="color:black">Freelance Web Development</a></li></h5>
-				<p style="margin-top:0px">
-					Engineering Consultants ES India <br />
+			<p>
+  				<a class="btn btn-primary" data-toggle="collapse" href="#collapse6" role="button" aria-expanded="false" aria-controls="collapseExample">
+    			Freelance Web Development
+  				</a>
+			</p>
+			<div class="collapse" id="collapse6">
+  				<div class="card card-body">
+	    			Engineering Consultants ES India <br />
 					1<sup>st</sup> Year Winter Break
-				</p>
-			</ol>
+  				</div>
+			</div>
 			
 		</div>
-	</div>
+	
 
 
-	<div class="parallax-container">
-		<div class="parallax"><img src="images/sun.jpg"></div>
-	</div>
+	
 
 
 <!-------------------------PROJECTS START HERE ---------------------------->
-<div class="section white">
-		<div class="row container">
+
+		
 			<h2 class="header">PROJECTS</h2>
 			
-			<ol>
 
-				<h5> <li> <a style="color:black">E-Commerce Platform</a></li></h5>
-				<p style="margin-top:0px">
-					Java EE, Spring MVC, MySQL <br />4-week Internship at Infosys<br> Project details can be found <a href="https://github.com/shantnu-agarwal/Internship-Infy/">here</a>
-				</p>
-				
-				<h5> <li> <a style="color:black">AI-powered Automated Attendance System</a></li></h5>
-				<p style="margin-top:0px">
-					Electron and Firebase <br />MozoHack - 24-hour Hackathon by SRMKZILLA <br> Project details can be found <a href="https://github.com/shantnu-agarwal/MozoHack/">here</a>
-				</p>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+				  E-Commerce Platform
+			</button>
 
-				
-			</ol>
-			
-		</div>
-	</div>
-	<div class="parallax-container">
-		<div class="parallax"><img src="images/sun.jpg"></div>
-	</div>
+			<div class="modal" tabindex="-1" role="dialog">
+  				<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<h5 class="modal-title">E-Commerce Platform</h5>
+        					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          						<span aria-hidden="true">&times;</span>
+        					</button>
+      					</div>
+      					<div class="modal-body">
+		        			<p>Java EE, Spring MVC, MySQL <br />4-week Internship at Infosys<br> Project details can be found <a href="https://github.com/shantnu-agarwal/Internship-Infy/">here</a></p>
+      					</div>
+      					<div class="modal-footer">
+	        				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      					</div>
+    				</div>
+  				</div>
+			</div>
 
+			<div class="modal" tabindex="-1" role="dialog">
+  				<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<h5 class="modal-title">AI-powered Automated Attendance System</h5>
+        					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          						<span aria-hidden="true">&times;</span>
+        					</button>
+      					</div>
+      					<div class="modal-body">
+		        			<p>Electron and Firebase <br />MozoHack - 24-hour Hackathon by SRMKZILLA <br> Project details can be found <a href="https://github.com/shantnu-agarwal/MozoHack/">here</a></a></p>
+      					</div>
+      					<div class="modal-footer">
+	        				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      					</div>
+    				</div>
+  				</div>
+			</div>
+
+		
+	
+	
 
 	<!----------------------------FOOTER HERE!---------------------------->
 
@@ -219,6 +251,8 @@
 		</div>
 	</footer>
 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="script.js"></script>
 
 </body>
