@@ -16,3 +16,13 @@ body{
 .collapse{
 	margin-bottom: 1rem;
 }
+
+.btn{
+	
+	width: 20rem;
+	height: auto;
+}
+
+#projectbtn1,#projectbtn2{
+	width: 50%;
+}
