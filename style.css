@@ -1,17 +1,18 @@
 body{
-	background-image: url("images/parallax1.jpg");
+	background-color: white;
 
 }
 
-#Headline {
-	color:white;
-	text-align:center;
-	margin-top: 90px;
+.card{
+	box-shadow: 0rem 2px 1px;
+
+
+
 }
-#FORM1 {
-	font-size:20px;
+.list-group-item{
+	text-align: left;
 }
 
-.parallax-container {
-	height: 500px;
+.collapse{
+	margin-bottom: 1rem;
 }
