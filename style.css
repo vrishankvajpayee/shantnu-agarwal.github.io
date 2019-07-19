@@ -7,6 +7,10 @@ body{
 
 }
 
+
+.nav-item{
+	margin-right: 0.5rem;
+}
 .nav-item:hover{
 	margin-right: 1rem;
 	margin-left: 1rem;
@@ -41,11 +45,13 @@ body{
 .btn:hover{
 	background-color: green;
 }
-
-.nav-item{
-	margin-right: 0.5rem;
+#projects,#exp{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
-
+.astroller{
+	margin-top: 1rem;
+}
 
 .footer{
   	
