@@ -25,8 +25,11 @@ body{
 
 
 
-.card{
-	box-shadow: 0rem 2px 1px;
+.card, .jumbotron{
+	box-shadow: 1px 2px 1px;
+}
+.card-img-top{
+	width: 4rem;
 }
 .list-group-item{
 	text-align: left;
