@@ -24,7 +24,9 @@ body{
 }
 
 
-
+#back2top{
+	margin-top: 3rem;
+}
 .card, .jumbotron{
 	box-shadow: 1px 2px 1px;
 }
