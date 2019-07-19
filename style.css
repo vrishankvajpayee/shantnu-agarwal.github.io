@@ -41,24 +41,32 @@ body{
 	color: black;
 	width: 20rem;
 	height: auto;
+	margin-bottom: 2rem;
 }
 .btn:hover{
 	background-color: green;
 }
 #projects,#exp{
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin-top: 5rem;
+	margin-bottom: 3rem;
 }
 .astroller{
 	margin-top: 1rem;
 }
 
 .footer{
-  	
   	bottom: 0;  	
   	background-color: white;
   	color: black;
   	text-align: center;
+}
+.footer-image{
+	height: 3rem;
+}
+
+#pic{
+	height: 120px;
+	border-radius: 10%;
 }
 
 #scrollBtn {
