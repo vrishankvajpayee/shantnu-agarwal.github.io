@@ -45,17 +45,15 @@
       <li class="nav-item active">
         <a class="nav-link" href="#projects">Projects</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#navbarSupportedContent">Back to top</a>
-      </li>
     </ul>
   </div>
 </nav>
+ 	<button onclick="topFunction()" id="myBtn" title="Go to top">Back to the top!</button> 
 	<br> <br>
 	
 
 
-	<div class="container givespace">
+	<div class="container" id="back2top">
 		<div class="card mb-3">
   			<img src="..." class="card-img-top" alt="...">  
 		</div>
@@ -80,7 +78,7 @@
 	<hr class="my-4">
 
 	<div class="container">
-		<div class="card">
+		<div class="card" id="skillset">
   			<img src="..." class="card-img-top" alt="Image Here">
   			<div class="card-body">
     			<h2 class="card-title">SKILL SET</h2>
@@ -103,7 +101,7 @@
 	<hr class="my-4">
 	
 		<div class="container"> 
-			<h2 class="header">COLLEGE EXPERIENCE</h2>
+			<h2 class="header" id="exp">COLLEGE EXPERIENCE</h2>
 			<div class="row">
 				<div class="col-sm-4">
 					<p class="text-center">
@@ -185,19 +183,19 @@
 <!-------------------------PROJECTS START HERE ---------------------------->
 
 		<div class="container">
-			<h2 class="header">PROJECTS</h2>
+			<h2 class="header" id="projects">PROJECTS</h2>
 			
-			<div class="row givespace">
+			<div class="row">
 				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal1" id="projectbtn1">
 				  	E-Commerce Platform
 				</button>
 			</div>
-			<div class="row givespace">
+			<div class="row">
 				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal2" id="projectbtn2">
 				  	AI-powered Automated Attendance System
 				</button>
 			</div>
-			<div class="row givespace">
+			<div class="row">
 				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal3" id="projectbtn3">
 				  	Freelance Web Development
 				</button>

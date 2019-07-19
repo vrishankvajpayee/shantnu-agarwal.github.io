@@ -25,7 +25,7 @@ body{
 }
 
 #projectbtn1,#projectbtn2,#projectbtn3{
-	width: 50%;
+	width: 100%;
 	text-align: center;
 }
 
@@ -34,13 +34,28 @@ body{
 	width: 100%;
 	z-index: 1;
 }
-.givespace{
-	margin-top: 2rem;
-}
 .footer{
   	
   	bottom: 0;  	
   	background-color: #A1887F;
   	color: white;
   	text-align: center;
+}
+
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 1rem; 
+  right: 1rem; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: red;
+  color: white; 
+  padding: 0.5rem; 
+  border-radius: 10px; 
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
