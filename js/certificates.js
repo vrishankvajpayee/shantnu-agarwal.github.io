@@ -71,8 +71,7 @@ function insaan() {
         },
         function(response){
             console.log(response);
-            return "LOL";
         }
     )
-
+    return response;
 }
