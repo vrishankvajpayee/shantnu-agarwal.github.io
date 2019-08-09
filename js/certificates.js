@@ -69,6 +69,7 @@ function insaan() {
             "response": recaptcha,
             "secret": "6LeZMbIUAAAAANeFZLbX7NZwImWHSsQOhLBfY3XH"
         },
+        datatype : 'jsonp',
         crossDomain: true,
         success: function (data) {
             var res = data.success.toString();
