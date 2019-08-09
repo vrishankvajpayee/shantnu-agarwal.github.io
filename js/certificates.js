@@ -33,11 +33,8 @@ function dod() {
     var filepath = 'competitive-coding//' + regno + '.jpg';
     var pathReference = storage.ref(filepath);
 
-    if(!insaan()){
-        console.log("verification failed")
-        document.getElementById("progress").style.visibility = 'hidden';
+    insaan()
         return;
-    }
 
 
     storageRef.child(filepath).getDownloadURL().then(function (url) {
@@ -61,11 +58,10 @@ function dod() {
 }
 
 function insaan() {
-    var status=false;
     var recaptcha = $('#g-recaptcha-response').val();
     console.log(recaptcha);
     if (recaptcha == "") {
-        console.log("ROBO");
+        console.log("Click nahi kara");
     }
     $.post("https://www.google.com/recaptcha/api/siteverify",
         {"secret":"6LeZMbIUAAAAANeFZLbX7NZwImWHSsQOhLBfY3XH",
@@ -73,10 +69,8 @@ function insaan() {
         },
         function(response){
             console.log(response);
-            status=true;
+            
         }
-    ).then(function(){
-        return status;
-    });
+    )
     
 }
