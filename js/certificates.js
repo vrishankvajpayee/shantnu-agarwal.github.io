@@ -63,6 +63,7 @@ function dod() {
 function insaan() {
     var status=false;
     var recaptcha = $('#g-recaptcha-response').val();
+    console.log(recaptcha);
     if (recaptcha == "") {
         console.log("ROBO");
     }
