@@ -35,6 +35,7 @@ function dod() {
 
     if(!insaan()){
         console.log("verification failed")
+        document.getElementById("progress").style.visibility = 'hidden';
         return;
     }
 
