@@ -35,7 +35,11 @@ function dod() {
 
     insaan()
 <<<<<<< HEAD
+<<<<<<< HEAD
     return;
+=======
+        return;
+>>>>>>> parent of 145980b... Back to Normal
 =======
         return;
 >>>>>>> parent of 145980b... Back to Normal
@@ -68,6 +72,7 @@ function insaan() {
         console.log("Click nahi kara");
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     var httprequest = new XMLHttpRequest();
     httprequest.open('POST',"https://www.google.com/recaptcha/api/siteverify",false);
     httprequest.setRequestHeader("Access-Control-Allow-Origin","https://www.google.com/recaptcha/api/siteverify");
@@ -97,6 +102,8 @@ function insaan() {
     // });
 
 =======
+=======
+>>>>>>> parent of 145980b... Back to Normal
     $.ajax({ 'url' : "https://www.google.com/recaptcha/api/siteverify", 
                data: { 
                    "response": recaptcha,
@@ -112,5 +119,8 @@ function insaan() {
                            } // end of success: 
          }); // end of $.ajax 
     
+<<<<<<< HEAD
+>>>>>>> parent of 145980b... Back to Normal
+=======
 >>>>>>> parent of 145980b... Back to Normal
 }
