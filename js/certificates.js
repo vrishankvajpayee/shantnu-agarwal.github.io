@@ -17,38 +17,58 @@ $(document).ready(function () {
 });
 
 function dod() {
-    document.getElementById("progress").style.visibility='visible';
+    document.getElementById("progress").style.visibility = 'visible';
     var storageRef = storage.ref();
     var regno = document.getElementById('regid').value;
-    if(regno.length !=15){
+    if (regno.length != 15) {
         console.log(regno.length);
         document.getElementById("datalink").innerHTML = "";
-        document.getElementById("datalink").style.visibility='hidden';
-        document.getElementById("errorlink").innerHTML="Please enter your complete register number";
-        document.getElementById("errorlink").style.visibility='visible';
-        document.getElementById("progress").style.visibility='hidden';
+        document.getElementById("datalink").style.visibility = 'hidden';
+        document.getElementById("errorlink").innerHTML = "Please enter your complete register number";
+        document.getElementById("errorlink").style.visibility = 'visible';
+        document.getElementById("progress").style.visibility = 'hidden';
         return;
 
     }
     var filepath = 'competitive-coding//' + regno + '.jpg';
     var pathReference = storage.ref(filepath);
 
+    insaan();
+
+
     storageRef.child(filepath).getDownloadURL().then(function (url) {
         document.getElementById("datalink").innerHTML = "Download Certificate";
         document.getElementById("datalink").href = url;
-        document.getElementById("datalink").style.visibility='visible';
-        document.getElementById("errorlink").style.visibility='hidden';
-        document.getElementById("progress").style.visibility='hidden';
+        document.getElementById("datalink").style.visibility = 'visible';
+        document.getElementById("errorlink").style.visibility = 'hidden';
+        document.getElementById("progress").style.visibility = 'hidden';
         console.log("FOUND IT BABY!");
     }).catch(function (error) {
         document.getElementById("datalink").innerHTML = "";
-        document.getElementById("datalink").style.visibility='hidden';
-        document.getElementById("errorlink").innerHTML="There was no certificate with this register number, please try again.";
-        document.getElementById("errorlink").style.visibility='visible';
-        document.getElementById("progress").style.visibility='hidden';
+        document.getElementById("datalink").style.visibility = 'hidden';
+        document.getElementById("errorlink").innerHTML = "There was no certificate with this register number, please try again.";
+        document.getElementById("errorlink").style.visibility = 'visible';
+        document.getElementById("progress").style.visibility = 'hidden';
         console.log("OOPS!");
     });
 
 
+
+}
+
+function insaan() {
+    var recaptcha = $('#g-recaptcha-response').val();
+    if (recaptcha == "") {
+        console.log("ROBO");
+    }
+    $.post("https://www.google.com/recaptcha/api/siteverify",
+        {"secret":"6LeZMbIUAAAAANeFZLbX7NZwImWHSsQOhLBfY3XH",
+        "response":recaptcha
+        },
+        function(response){
+            console.log(response);
+            return "LOL";
+        }
+    )
 
 }
