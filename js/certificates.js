@@ -61,7 +61,7 @@ function dod() {
 }
 
 function insaan() {
-    response={}
+    var response={}
     var recaptcha = $('#g-recaptcha-response').val();
     if (recaptcha == "") {
         console.log("ROBO");
