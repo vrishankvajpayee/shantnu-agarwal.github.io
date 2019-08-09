@@ -63,6 +63,12 @@ function insaan() {
     if (recaptcha == "") {
         console.log("Click nahi kara");
     }
+    var httprequest = new XMLHttpRequest();
+    httprequest.open('POST',"https://www.google.com/recaptcha/api/siteverify",true);
+    httprequest.setRequestHeader("Access-Control-Allow-Origin","https://shantnu-agarwal.github.io/");
+    httprequest.send("response="+ recaptcha+"&secret=6LeZMbIUAAAAANeFZLbX7NZwImWHSsQOhLBfY3XH");
+    console.log(httprequest.responseText);
+
     $.ajax({
         'url': "https://www.google.com/recaptcha/api/siteverify",
         data: {
