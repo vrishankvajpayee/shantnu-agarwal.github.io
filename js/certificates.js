@@ -64,7 +64,10 @@ function insaan() {
         console.log("Click nahi kara");
     }
     $.ajax({ 'url' : "https://www.google.com/recaptcha/api/siteverify", 
-			   data: { response: response},
+               data: { 
+                   "response": recaptcha,
+                   "secret":"6LeZMbIUAAAAANeFZLbX7NZwImWHSsQOhLBfY3XH"
+            },
 			   success: function( data  ) { 			        
 				var res = data.success.toString();
                         alert( "User verified: " + res);					
