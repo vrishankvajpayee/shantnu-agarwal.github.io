@@ -33,7 +33,10 @@ function dod() {
     var filepath = 'competitive-coding//' + regno + '.jpg';
     var pathReference = storage.ref(filepath);
 
-    insaan();
+    if(!insaan()){
+        console.log("verification failed")
+        return;
+    }
 
 
     storageRef.child(filepath).getDownloadURL().then(function (url) {
