@@ -34,7 +34,11 @@ function dod() {
     var pathReference = storage.ref(filepath);
 
     insaan()
+<<<<<<< HEAD
     return;
+=======
+        return;
+>>>>>>> parent of 145980b... Back to Normal
 
 
     storageRef.child(filepath).getDownloadURL().then(function (url) {
@@ -63,6 +67,7 @@ function insaan() {
     if (recaptcha == "") {
         console.log("Click nahi kara");
     }
+<<<<<<< HEAD
     var httprequest = new XMLHttpRequest();
     httprequest.open('POST',"https://www.google.com/recaptcha/api/siteverify",false);
     httprequest.setRequestHeader("Access-Control-Allow-Origin","https://www.google.com/recaptcha/api/siteverify");
@@ -91,4 +96,21 @@ function insaan() {
     //     }
     // });
 
+=======
+    $.ajax({ 'url' : "https://www.google.com/recaptcha/api/siteverify", 
+               data: { 
+                   "response": recaptcha,
+                   "secret":"6LeZMbIUAAAAANeFZLbX7NZwImWHSsQOhLBfY3XH"
+            },
+			   success: function( data  ) { 			        
+				var res = data.success.toString();
+                        alert( "User verified: " + res);					
+				if (res ==  'true') { 
+                       document.getElementById('g-recaptcha').innerHTML = 'THE CAPTCHA WAS SUCCESSFULLY SOLVED'; 
+                       console.log("HUMANS")
+                                } 
+                           } // end of success: 
+         }); // end of $.ajax 
+    
+>>>>>>> parent of 145980b... Back to Normal
 }
