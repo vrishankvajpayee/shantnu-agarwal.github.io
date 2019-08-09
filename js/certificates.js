@@ -34,7 +34,7 @@ function dod() {
     var pathReference = storage.ref(filepath);
 
     insaan()
-        return;
+    return;
 
 
     storageRef.child(filepath).getDownloadURL().then(function (url) {
@@ -63,19 +63,25 @@ function insaan() {
     if (recaptcha == "") {
         console.log("Click nahi kara");
     }
-    $.ajax({ 'url' : "https://www.google.com/recaptcha/api/siteverify", 
-               data: { 
-                   "response": recaptcha,
-                   "secret":"6LeZMbIUAAAAANeFZLbX7NZwImWHSsQOhLBfY3XH"
-            },
-			   success: function( data  ) { 			        
-				var res = data.success.toString();
-                        alert( "User verified: " + res);					
-				if (res ==  'true') { 
-                       document.getElementById('g-recaptcha').innerHTML = 'THE CAPTCHA WAS SUCCESSFULLY SOLVED'; 
-                       console.log("HUMANS")
-                                } 
-                           } // end of success: 
-         }); // end of $.ajax 
-    
+    $.ajax({
+        'url': "https://www.google.com/recaptcha/api/siteverify",
+        data: {
+            "response": recaptcha,
+            "secret": "6LeZMbIUAAAAANeFZLbX7NZwImWHSsQOhLBfY3XH"
+        },
+        crossDomain: true,
+        success: function (data) {
+            var res = data.success.toString();
+            alert("User verified: " + res);
+            if (res == 'true') {
+                document.getElementById('g-recaptcha').innerHTML = 'THE CAPTCHA WAS SUCCESSFULLY SOLVED';
+                console.log("HUMANS")
+            }
+        }, 
+        error: function(xhr, status){
+            console.log(xhr);
+            console.log(status);
+        }
+    });
+
 }
