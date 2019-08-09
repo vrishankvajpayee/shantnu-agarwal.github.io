@@ -74,6 +74,8 @@ function insaan() {
             console.log(response);
             status=true;
         }
-    )
-    return status;
+    ).then(function(){
+        return status;
+    });
+    
 }
