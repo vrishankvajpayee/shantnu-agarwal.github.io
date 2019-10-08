@@ -1,15 +1,8 @@
 window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("scrollBtn").style.display = "block";
-  } else {
-    document.getElementById("scrollBtn").style.display = "none";
-  }
-}
+var obj = { name: "John", today: new Date(), city : "New York" };
+var myJSON = JSON.stringify(obj);
 
+document.getElementById("demo").innerHTML = myJSON;
 
-function topFunction() {
-  	document.body.scrollTop=0;
-  	document.documentElement.scrollTop=0;
 } 
